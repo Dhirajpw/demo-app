@@ -10,7 +10,8 @@ phases:
     commands:
       - echo "Building the application..."
       - echo Build started on `date`
-      - cp demo-app/index.html /var/www/html/index.html
+      - mkdir -p output
+      - cp index.html output/index.html
   post_build:
     commands:
       - echo "Configuring NGINX..."
