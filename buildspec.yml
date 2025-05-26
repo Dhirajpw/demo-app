@@ -5,12 +5,12 @@ phases:
     commands:
       echo "Installing NGINX..."
       - sudo apt-get update
-      - sudo apt-get install -y nginx
+      - sudo apt-get install nginx -y 
   build:
     commands:
       - echo "Building the application..."
       - echo Build started on `date`
-      - cp index.html /var/www/html/
+      - cp index.html /var/www/html/index.html
   post_build:
     commands:
       - echo "Configuring NGINX..."
