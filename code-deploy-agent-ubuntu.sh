@@ -6,7 +6,7 @@ sudo apt-get update -y
 sudo apt-get install ruby -y
 
 # update regions in the link as per your current region you working in
-wget https://aws-codedeploy-ap-southeast-1.s3.ap-southaest-1.amazonaws.com/latest/install
+wget https://aws-codedeploy-ap-southeast-1.s3.ap-southeast-1.amazonaws.com/latest/install
 
 # assigning execute permission
 chmod +x ./install
